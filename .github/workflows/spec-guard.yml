@@ -15,11 +15,8 @@ jobs:
       issues: write
 
     steps:
-      - name: Checkout spec-first action
-        uses: actions/checkout@v4
-
       - name: Run Spec Guard
-        uses: ./.spec-first
+        uses: jefer94/spec-first@main
         with:
           model: ${{ vars.SPEC_GUARD_MODEL }}
         env:
