@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Run Spec Guard
-        uses: jefer94/spec-first@main
+        uses: jefer94/spec-first@v1
         with:
           model: ${{ vars.SPEC_GUARD_MODEL }}
         env:
