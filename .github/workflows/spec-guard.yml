@@ -17,6 +17,7 @@ jobs:
         uses: jefer94/spec-first@v1
         with:
           model: ${{ vars.SPEC_GUARD_MODEL }}
+          bypass_roles: ''
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
